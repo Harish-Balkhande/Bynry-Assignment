@@ -27,7 +27,7 @@ const ProfileList = ({ onProfileSelect }) => {
 //   }, []);
 
   return (
-    <div className="profile-list">
+    <div className="profile-list" style={{maxWidth:'60%'}}>
       {profiles.map(profile => (
         <ProfileCard 
           key={profile.id} 

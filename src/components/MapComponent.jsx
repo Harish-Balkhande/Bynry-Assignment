@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import "../components/CSS/mapComponent.css"
 
 const MapComponent = ({ address }) => {
   const [mapCenter, setMapCenter] = useState({ lat: 0, lng: 0 });
@@ -28,7 +29,8 @@ const MapComponent = ({ address }) => {
   }, [address, geocoder]);
 
   return (
-    <LoadScript
+    <div id='map-component'>
+        <LoadScript
       googleMapsApiKey="AIzaSyDyNOUgoLQ9WA7hocfGu7sf_XULK3mMqR0"
       onLoad={() => console.log('Google Maps API loaded')}
     >
@@ -43,6 +45,7 @@ const MapComponent = ({ address }) => {
         )}
       </GoogleMap>
     </LoadScript>
+    </div>
   );
 };
 
