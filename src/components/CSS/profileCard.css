@@ -1,0 +1,31 @@
+#profile-card {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid gray;
+    max-width: 50%;
+}
+
+.profile-image {
+    width: 20%;
+    height: auto;
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.button {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgb(73, 114, 219);
+    border: none;
+    padding: 9px 14px;
+    border-radius: 4px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .glow-button:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+  }
